@@ -28,8 +28,8 @@
         Root@Enamorado:~$ <span class="filename">cat I_Love_You.txt</span>
        </div>
         <br>
-        <div class="prompt">
-            Root@Enamorado:~$ <span class="output-line">Polet, desde hace tiempo quería hacerte una carta.</span>
+        <div class="output-line">
+            Polet, desde hace tiempo quería hacerte una carta.
         </div>
         <div class="output-line">
             He querido encontrar las palabras adecuadas para expresarte lo mucho que significas para mí.
@@ -59,36 +59,6 @@
         </div>
         
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.addEventListener('keypress', function(event) {
-                if (event.key === 'Enter') {
-                    var commandInput = document.getElementById('command-input');
-                    if (commandInput) {
-                        var command = commandInput.value.trim();
-                        commandInput.value = '';
-
-                        var terminal = document.querySelector('.terminal:last-child');
-                        terminal.innerHTML += '<div class="output-line">' + command + '</div>';
-
-                        if (command === 'ls') {
-                            terminal.innerHTML += '<div class="output-line">Desktop Documents Downloads Music Pictures Public Templates Videos</div>';
-                        } else if (command === 'cd Downloads') {
-                            terminal.innerHTML += '<div class="output-line">/home/user/Downloads</div>';
-                        } else if (command === 'pwd') {
-                            terminal.innerHTML += '<div class="output-line">/home/user</div>';
-                        } else {
-                            terminal.innerHTML += '<div class="output-line">Command not found</div>';
-                        }
-
-                        terminal.innerHTML += '<div class="prompt">Enamorado@hostname:~$</div>';
-                        terminal.scrollTop = terminal.scrollHeight;
-                    }
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>
