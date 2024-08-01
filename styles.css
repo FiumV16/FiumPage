@@ -35,7 +35,7 @@ body.dark-mode {
 /* Estilos para las líneas de salida */
 .output-line {
     color: #fff; /* Color de texto claro para las líneas de salida */
-    margin-bottom: 10px; /* Espaciado entre líneas de salida */
+    margin-bottom: 3px; /* Espaciado entre líneas de salida */
 }
 
 /* Estilos para el nombre del archivo */
